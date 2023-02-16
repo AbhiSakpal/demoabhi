@@ -7,6 +7,6 @@ public class BaseClass {
 	protected LoginPage loginPage;
 	protected DashboardPage dashboardPage;
 	protected PimPage pimPage;
-
+/////gjjhj
 
 }
