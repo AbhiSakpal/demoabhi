@@ -23,7 +23,7 @@ public class calender2 {
 		driver.findElement(By.id("datepicker2")).click();
 		Thread.sleep(2000);
 
-		driver.findElements(By.cssSelector("select[title=\"Change the year\"] option")).get(0).click();
+		driver.findElements(By.cssSelector("[title='Change the year'] option")).get(0).click();
 		WebElement year = driver.findElement(By.xpath("//*[@title='Change the year']"));
 		Select y = new Select(year);
 		y.selectByVisibleText("1997");
@@ -32,10 +32,11 @@ public class calender2 {
 		Select m = new Select(month);
 		m.selectByVisibleText("April");
 
-		List<WebElement> dates = driver.findElements(By.xpath("//table//tr//td//a"));
+		/*List<WebElement> dates = driver.findElements(By.xpath("//table//tr//td//a"));
 		for (WebElement date : dates)
 			if (date.getText().equals("30"))
-				date.click();
+				date.click();*/
+		driver.findElement(By.xpath("//*[text()='30']")).click();
 		
 		Thread.sleep(2000);
 		driver.quit();
