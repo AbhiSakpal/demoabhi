@@ -25,7 +25,7 @@ public class PimTest extends CommonTest {
 		Assert.assertEquals(false, false);
 	}
 	
-	@Test(priority = 6, groups = { "smoke", "regression" })
+	@Test(priority = -1, groups = { "smoke", "regression" })
 	public void Test() {
 		Assert.assertEquals(false, false);
 	}
